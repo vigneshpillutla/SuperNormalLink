@@ -41,32 +41,31 @@ function moveNoButton() {
     noBtn.style.left = randomX + 'px';
     noBtn.style.top = randomY + 'px';
     
-    // Increase yes button size
+
     yesBtnScale += 0.1;
     yesBtn.style.transform = `scale(${yesBtnScale})`;
     
-    // Update message
+
     message.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
 }
 
-// Desktop hover
+
 noBtn.addEventListener('mouseover', moveNoButton);
 
-// Mobile touch
+
 noBtn.addEventListener('touchstart', (e) => {
     e.preventDefault();
     moveNoButton();
 });
 
-// Yes button clicked
+
 yesBtn.addEventListener('click', () => {
-    // Open WhatsApp with pre-filled message
-    const whatsappNumber = '+918828459033'; // Replace with your number (country code + number)
+
+    const whatsappNumber = '+918828459033';
     const whatsappMessage = encodeURIComponent("Yeshh yessssssssshhh! A hundred times yesss I'll be your valentine bubuuuuu! 💗");
     window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
     
-    // Update the card
     heading.textContent = 'You wont regret this! 💖 I lovee youu sushaaa!!';
     img.src = 'https://media.tenor.com/v1y8i3QG4foAAAAi/white-heart.gif';
     buttons.style.display = 'none';
