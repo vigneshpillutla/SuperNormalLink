@@ -63,7 +63,7 @@ noBtn.addEventListener('touchstart', (e) => {
 yesBtn.addEventListener('click', () => {
     // Open WhatsApp with pre-filled message
     const whatsappNumber = '+918828459033'; // Replace with your number (country code + number)
-    const whatsappMessage = encodeURIComponent("Yes yesssssssss! A hundred times yesss I'll be your valentine bubuuuuu! 💕");
+    const whatsappMessage = encodeURIComponent("Yeshh yessssssssshhh! A hundred times yesss I'll be your valentine bubuuuuu! 💗");
     window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
     
     // Update the card
